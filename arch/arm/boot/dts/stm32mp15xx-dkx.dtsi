@@ -103,7 +103,7 @@
 	vdd-supply = <&vdd>;
 	vdda-supply = <&vdd>;
 	vref-supply = <&vrefbuf>;
-	status = "disabled";
+	status = "okay";
 	adc1: adc@0 {
 		/*
 		 * Type-C USB_PWR_CC1 & USB_PWR_CC2 on in18 & in19.
@@ -603,7 +603,15 @@
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&spi5_pins_a>;
 	pinctrl-1 = <&spi5_sleep_pins_a>;
-	status = "disabled";
+	cs-gpios = <&gpiog 15 GPIO_ACTIVE_LOW>;
+    cd-gpios = <&gpiod 7  GPIO_ACTIVE_LOW>;
+	status = "okay";
+	
+	spidev0: spiddev@0 {
+		compatible = "rohm,dh2228fv";
+		reg = <0>;
+		spi-max-frequency = <50000000>; //50MHz
+	};
 };
 
 &sram {
@@ -725,7 +733,7 @@
 	pinctrl-1 = <&usart3_sleep_pins_b>;
 	pinctrl-2 = <&usart3_idle_pins_b>;
 	uart-has-rtscts;
-	status = "disabled";
+	status = "okay";
 };
 
 &usbh_ehci {
