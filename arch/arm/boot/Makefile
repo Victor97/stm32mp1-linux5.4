@@ -115,4 +115,4 @@ uinstall:
 	$(CONFIG_SHELL) $(srctree)/$(src)/install.sh "$(KERNELRELEASE)" \
 	$(obj)/uImage System.map "$(INSTALL_PATH)"
 
-subdir-	    := bootp compressed dts
+subdir-	    := bootp compressed dts 

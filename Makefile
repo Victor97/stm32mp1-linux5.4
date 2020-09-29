@@ -1230,6 +1230,7 @@ kselftest-merge:
 
 ifneq ($(wildcard $(srctree)/arch/$(SRCARCH)/boot/dts/),)
 dtstree := arch/$(SRCARCH)/boot/dts
+dtstree += arch/$(SRCARCH)/boot/dts/myzr
 endif
 
 ifneq ($(dtstree),)

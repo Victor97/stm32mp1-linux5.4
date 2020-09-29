@@ -978,6 +978,7 @@ dtb-$(CONFIG_ARCH_STI) += \
 	stih410-b2120.dtb \
 	stih410-b2260.dtb \
 	stih418-b2199.dtb
+	
 dtb-$(CONFIG_ARCH_STM32) += \
 	stm32f429-disco.dtb \
 	stm32f469-disco.dtb \
@@ -1007,7 +1008,8 @@ dtb-$(CONFIG_ARCH_STM32) += \
 	stm32mp157c-ev1-a7-examples.dtb \
 	stm32mp157c-ev1-m4-examples.dtb \
 	stm32mp157f-ev1-a7-examples.dtb \
-	stm32mp157f-ev1-m4-examples.dtb
+	stm32mp157f-ev1-m4-examples.dtb 
+
 
 dtb-$(CONFIG_MACH_SUN4I) += \
 	sun4i-a10-a1000.dtb \
@@ -1320,3 +1322,6 @@ dtb-$(CONFIG_ARCH_ASPEED) += \
 	aspeed-bmc-opp-zaius.dtb \
 	aspeed-bmc-portwell-neptune.dtb \
 	aspeed-bmc-quanta-q71l.dtb
+
+
+

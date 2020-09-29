@@ -26,7 +26,7 @@
 #define AF14	0xf
 #define AF15	0x10
 #define ANALOG	0x11
-#define RSVD	0x12
+#define RSVD	0x12 //保留功能，这可以用来保留一些管脚，例如给不运行Linux的协处理器
 
 /* define Pins number*/
 #define PIN_NO(port, line)	(((port) - 'A') * 0x10 + (line))
